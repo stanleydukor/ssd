@@ -1,5 +1,7 @@
 env
 *pycache*
+*.pyc
+*.pyo
 checkpoint/*
 config/*
 output/*

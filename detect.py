@@ -109,13 +109,15 @@ def detect(original_image, min_score, max_overlap, top_k, suppress=None):
         draw.text(xy=text_location, text=det_labels[i].upper(), fill="white", font=font)
     del draw
 
+    if not os.path.exists("output"):
+        os.makedirs("output")
     annotated_image.save("output/result.jpg")
 
     return annotated_image
 
 
 if __name__ == "__main__":
-    img_path = "img/3.jpg"
+    img_path = "input/3.jpg"
     original_image = Image.open(img_path, mode="r")
     original_image = original_image.convert("RGB")
     detect(original_image, min_score=0.2, max_overlap=0.5, top_k=200).show()

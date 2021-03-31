@@ -30,7 +30,7 @@ if method == "live":
 
 else:
     file_name = "1"
-    reader = imageio.get_reader('vid/'+file_name+'.mp4') # We open the video.
+    reader = imageio.get_reader('input/'+file_name+'.mp4') # We open the video.
     fps = reader.get_meta_data()['fps'] # We get the fps frequence (frames per second).
     writer = imageio.get_writer('output/'+file_name+'.mp4', fps = fps) # We create an output video with this same fps frequence.
     for i, frame in enumerate(reader): # We iterate on the frames of the output video:
