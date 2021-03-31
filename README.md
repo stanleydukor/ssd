@@ -7,4 +7,4 @@
 - Run `detect.py` to perform inference on input image, display output image, and save image in an output folder.
 - Run `video.py` to perform inference on input video, display output video, and save video in an output folder.
 
-Original Repo: (Here)[https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection]
+Original Repo: [Here](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection)
